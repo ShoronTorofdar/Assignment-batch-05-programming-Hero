@@ -1,0 +1,26 @@
+body{
+  margin: 0px;
+  font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+/* header section start */
+#nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 87px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+#nav-anchor{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+#nav-anchor a{
+  text-decoration: none;
+  margin-left: 34px;
+  font-weight: 600;
+  font-size: 16px;
+}
