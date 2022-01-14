@@ -10,8 +10,6 @@ font-family: 'Poppins', sans-serif;
   justify-content: space-between;
   align-items: center;
   margin-top: 87px;
-  margin-left: 120px;
-  margin-right: 120px;
 }
 #nav-anchor{
   display: flex;
@@ -24,14 +22,20 @@ font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
+/* header section end */
+
+/* camera section start */
 
 #camera-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 120px;
-  margin-right: 120px;
   margin-top: 80px;
+}
+#camera-section div h1{
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 70px;
 }
 #camera-section div p{
   margin-bottom: 32.2px;
@@ -57,9 +61,48 @@ font-family: 'Poppins', sans-serif;
   background-image: url('../images/Circle\ design.svg');
   background-position: center;
 }
+/* camera section end */
+
+/* popular Collection card section start */
+#popular-collection{
+  margin-top: 100px;
+  
+}
+#popular-collection>h1{
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+#cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.card{
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 17px 15px;
+
+}
+
+
+/* popular Collection card section end */
 
 
 /* common class */
 .half-width{
   width: 50%;
+}
+
+
+.section-margin{
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+span{
+  margin-left: 8px;
 }
