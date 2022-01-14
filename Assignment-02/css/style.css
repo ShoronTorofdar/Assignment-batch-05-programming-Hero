@@ -42,17 +42,7 @@ font-family: 'Poppins', sans-serif;
   text-align: justify;
 }
 
-#camera-section div a{
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 16px;
-  background-color:#E02C6D ;
-  width: 196px;
-  height: 44px;
-  padding: 10px 24px;
-  border-radius: 41px;
-}
+
 .fa-fw{
   padding-left: 8px;
 }
@@ -63,7 +53,10 @@ font-family: 'Poppins', sans-serif;
 }
 /* camera section end */
 
+
 /* popular Collection card section start */
+
+
 #popular-collection{
   margin-top: 100px;
   
@@ -76,10 +69,14 @@ font-family: 'Poppins', sans-serif;
 #cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: fit-content;
 }
 
 .card{
+  
   align-items: center;
   background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -92,11 +89,48 @@ font-family: 'Poppins', sans-serif;
 /* popular Collection card section end */
 
 
+
+/* extra section start */
+#subscribe{
+  background-color: rgba(0, 255, 255, 0.027);
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-left: 90px;
+  padding-bottom: 100px;
+  padding-right: 90px;
+}
+#subscribe > h1{
+  text-align: center;
+  font-size: 40px;
+}
+#subscribe p{
+  text-align: justify;
+}
+input{
+  width: 50%;
+  padding: 10px;
+  box-shadow: black;
+}
+/* extra section ended */
+
+
+
 /* common class */
 .half-width{
   width: 50%;
 }
-
+.button{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color:#E02C6D ;
+  width: 196px;
+  height: 44px;
+  padding: 10px 24px;
+  border-radius: 41px;
+}
 
 .section-margin{
   margin-left: 120px;
@@ -105,4 +139,7 @@ font-family: 'Poppins', sans-serif;
 
 span{
   margin-left: 8px;
+}
+.fa-luggage-cart{
+  color: rgb(20, 231, 84);
 }
