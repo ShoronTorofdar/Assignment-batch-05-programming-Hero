@@ -4,7 +4,7 @@ body{
 font-family: 'Poppins', sans-serif;
 }
 
-/* header section start */
+/* ------------------------------header section start------------------------------ */
 #nav-bar{
   display: flex;
   justify-content: space-between;
@@ -22,9 +22,9 @@ font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
-/* header section end */
+/*---------------------------- header section end ----------------------------*/
 
-/* camera section start */
+/* ----------------------camera section start--------------------------------- */
 
 #camera-section{
   display: flex;
@@ -42,19 +42,39 @@ font-family: 'Poppins', sans-serif;
   text-align: justify;
 }
 
-
-.fa-fw{
-  padding-left: 8px;
-}
-
 #bg-images{
-  background-image: url('../images/Circle\ design.svg');
+  background-image: url('../images/Circle design.svg');
   background-position: center;
+  overflow: hidden;
 }
-/* camera section end */
+
+#bg-images img:hover{
+  transition: transform linear 2s;
+  transform: scale(2) rotate(90deg);
+ 
+}
+/*------------------------------- camera section end---------------------------------- */
+
+/* ---------------------------------logos section start-------------------------------- */
+
+hr{
+  height: 1px;
+  background-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+#logos{
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
+  margin-bottom: 34.39px;
+}
 
 
-/* popular Collection card section start */
+#logos div img{
+  margin-left: 60.42px ;
+}
+/* -----------------------------------logos section end-------------------------------- */
+
+/*----------------------- popular Collection card section start------------------------ */
 
 
 #popular-collection{
@@ -69,11 +89,12 @@ font-family: 'Poppins', sans-serif;
 #cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
+  /* justify-content: space-around; */
+  /* align-items: center; */
   gap: 30px;
-  width: fit-content;
+  /* width: fit-content; */
 }
+
 
 .card{
   
@@ -85,12 +106,29 @@ font-family: 'Poppins', sans-serif;
 
 }
 
+.card div img{
+  width: 100%;
+}
+.card div p{
+  font-size: 14px;
+  font-weight: bold;
+  color: #787885 ;
+}
 
-/* popular Collection card section end */
+.fa-star{
+  color: #FB8200;
+}
+
+.fa-star-half-alt{
+  color: #FB8200;
+}
+
+
+/*----------------- popular Collection card section end ------------------------------*/
 
 
 
-/* extra section start */
+/*--------------------------------- extra section start--------------------------------- */
 #subscribe{
   background-color: rgba(0, 255, 255, 0.027);
   margin-top: 50px;
@@ -103,32 +141,41 @@ font-family: 'Poppins', sans-serif;
 #subscribe > h1{
   text-align: center;
   font-size: 40px;
+  color:deepskyblue
 }
 #subscribe p{
   text-align: justify;
+  font-weight: bold;
+  font-size: 20px;
 }
 input{
   width: 50%;
   padding: 10px;
   box-shadow: black;
 }
-/* extra section ended */
+/* -------------------------------extra section ended ------------------------*/
 
 
-/* footer section start */
+/* -------------------------------footer section start------------------------ */
 
-footer{
+#footer{
   text-align: center;
   color: #FFFFFF;
-  background-color: indigo;
+  background-color: #0A0826;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+#footer h1{
+  font-size: 24px;
+  font-weight: 700;
+}
+
 
 /* footer section end */
 
 
-/* common class */
+/* --------------------------common classes----------------------------- */
+
 .half-width{
   width: 50%;
 }
@@ -151,7 +198,23 @@ footer{
 
 span{
   margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #787885 ;
 }
+
+/* ----------------------------------------icon class----------------------------------- */
+.fa-fw{
+  padding-left: 8px;
+}
+
 .fa-luggage-cart{
-  color: rgb(20, 231, 84);
+  color: deepskyblue;
 }
+ .fa-white{
+  color: #FFFFFF;
+  margin-left: 26px;
+  margin-top: 20px;
+}
+
+
